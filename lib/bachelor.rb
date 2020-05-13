@@ -44,7 +44,7 @@ def get_first_name_of_season_winner(data, season)
         catigories_of_bachelors.each do|attribute, val|
           # binding.pry
           if val == "Winner"
-            return catigories_of_bachelors[:name].split(" ").first
+            return catigories_of_bachelors[:name].split.first
           end
         end
       end
