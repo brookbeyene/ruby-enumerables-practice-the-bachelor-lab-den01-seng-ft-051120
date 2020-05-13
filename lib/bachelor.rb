@@ -117,8 +117,8 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  # age_tot = age_total.map(&:to_i)
-  return age_total.sum() / age_total.size
+  age_tot = age_total.sum(0.0) / age_total.size
+  return age_tot.round()
 
 end
 # binding.pry
